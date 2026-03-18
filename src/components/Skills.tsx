@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Database, Layout, Zap, BarChart, Terminal } from 'lucide-react';
+import { Database, Layout, Zap, BarChart } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 const skillCategories = [
