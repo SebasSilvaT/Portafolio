@@ -17,7 +17,7 @@ export const AboutMe = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.7 }}
-                        className="aspect-square relative rounded-[2rem] overflow-hidden border border-neutral-800 bg-neutral-900 group"
+                        className="relative aspect-[9/16] max-w-sm rounded-[2rem] overflow-hidden border border-neutral-800 bg-neutral-900 group"
                     >
                         <video
                             className="absolute inset-0 w-full h-full object-cover"

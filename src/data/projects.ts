@@ -21,6 +21,7 @@ export const projects: Project[] = [
         },
         stack: ["Java", "Spring Boot", "Angular", "MySQL"],
         repo: "https://github.com/Microfinanzas-Fullstack",
+        link: "https://drive.google.com/drive/folders/1xFjcaXT6tyWn1aG3XayFfsA8u-RV-7yI?usp=sharing",
         colSpan: 1,
     },
     {
@@ -35,6 +36,7 @@ export const projects: Project[] = [
         },
         stack: ["Python", "FastAPI", "React", "TypeScript"],
         repo: "https://github.com/Plataforma-de-E-learning",
+        link: "https://drive.google.com/drive/folders/1bYog0zBhLkMvuDmp5vTBy4DHnxKXellt?usp=sharing",
         colSpan: 1,
     },
     {
@@ -49,6 +51,7 @@ export const projects: Project[] = [
         },
         stack: ["C#", ".NET Core", "Vue.js", "SQLite"],
         repo: "https://github.com/Sistema-Reserva-Gimnasio",
+        link: "https://drive.google.com/drive/folders/112m7MNB-34wk7Xb23WSnI110vGB0Leu1?usp=sharing",
         colSpan: 1,
     },
     {

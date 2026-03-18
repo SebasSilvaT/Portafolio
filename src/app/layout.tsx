@@ -8,7 +8,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Desarrollador Fullstack | Portafolio',
+  title: 'Desarrollador Fullstack | Portafolio S.Silva',
   description: 'Portafolio profesional de desarrollador fullstack en tecnologías empresariales y modernas.',
 };
 

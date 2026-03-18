@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Bienvenido a mi Portafolio
 
-## Getting Started
+¡Hola! Soy **Sebastián Valentino Silva Tirado**, estudiante de **Ingeniería de Software** en la UPC (9.º ciclo, Décimo Superior) y apasionado desarrollador Fullstack enfocado en crear soluciones empresariales escalables y eficientes.
 
-First, run the development server:
+Este repositorio alberga el código de mi portafolio web personal, donde comparto mis proyectos, mi perspectiva sobre el diseño de software y las tecnologías que me motivan a construir diariamente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Sobre el Proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este sitio está diseñado para ser algo más que una tarjeta de presentación: una experiencia fluida, rápida y atractiva que demuestra mi amor por las interfaces limpias y el rendimiento optimizado.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🌟 Características Clave
+- **🌐 Soporte Multilingüe (i18n):** Alterna entre Español e Inglés al instante.
+- **✨ Animaciones Fluídas:** Construidas con **Framer Motion** para dar vida a cada sección de forma sutil.
+- **📱 Responsive Design:** Adaptado para una visualización perfecta desde smartphones hasta monitores ultrawide.
+- **⚡ Rendimiento Next-Gen:** Basado en Next.js App Router para una carga instantánea.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Mi Toolkit Técnico
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Me encanta moverme entre el desarrollo backend de nivel empresarial y la web moderna de alto rendimiento:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| 🏢 **Enterprise Ecosystem** | 🌐 **Modern Web** | ⚡ **Performance & Architecture** | 📊 **Data & Automation** |
+| :--- | :--- | :--- | :--- |
+| **Java** & Spring Boot | **React** & Next.js | Microservicios | **Python** & Pandas/NumPy |
+| **C#** & .NET Core | TypeScript | API REST / GraphQL | SQL (T-SQL) |
+| SQL Server / PostgreSQL | Vue.js / Angular | CI/CD | Power BI |
+| Docker & MySQL | Tailwind CSS | Testing (Jest/JUnit) | Bash / PowerShell |
+| | Framer Motion | Redis | Selenium & Ansible |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚙️ Configuración y Ejecución
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Si deseas explorar el código o levantar este proyecto en tu entorno local:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/SebasSilvaT/Portafolio.git
+   cd Portafolio
+   ```
+
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+3. **Ejecutar en modo desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   *Visita `http://localhost:3000` para ver la magia correr en vivo.*
+
+---
+
+## 🤝 Hablemos
+
+¿Tienes alguna idea o proyecto en mente? ¡Me encantaría conectar contigo!
+
+- 💼 **LinkedIn:** [sebastian-silva-t](https://www.linkedin.com/in/sebastian-silva-t/)
+- 🐙 **GitHub:** [@SebasSilvaT](https://github.com/SebasSilvaT)
+
+---
+
+<p align="center">Construido con ❤️ por Sebastián Silva</p>

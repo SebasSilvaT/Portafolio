@@ -58,11 +58,11 @@ export const Hero = () => {
                         {t('hero.btn.cv')}
                         <Download className="w-4 h-4" />
                     </a>
-                    <a href="https://www.linkedin.com/in/sebastian-silva-t/" className="px-8 py-4 rounded-xl bg-white text-black font-semibold hover:bg-neutral-200 transition-all flex items-center gap-2 group">
+                    <a href="https://www.linkedin.com/in/sebastian-silva-t/" target="_blank" rel="noreferrer noopener" className="px-8 py-4 rounded-xl bg-white text-black font-semibold hover:bg-neutral-200 transition-all flex items-center gap-2 group">
                         LinkedIn
                         <ArrowBigUp className="w-4 h-4" />
                     </a>
-                    <a href="https://github.com/SebasSilvaT" className="px-8 py-4 rounded-xl bg-white text-black font-semibold hover:bg-neutral-200 transition-all flex items-center gap-2 group">
+                    <a href="https://github.com/SebasSilvaT" target="_blank" rel="noreferrer noopener" className="px-8 py-4 rounded-xl bg-white text-black font-semibold hover:bg-neutral-200 transition-all flex items-center gap-2 group">
                         GitHub
                         <ArrowBigUp className="w-4 h-4" />
                     </a>
