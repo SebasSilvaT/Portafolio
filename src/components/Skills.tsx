@@ -1,13 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Database, Layout, Zap } from 'lucide-react';
+import { Database, Layout, Zap, BarChart, Terminal } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const skillCategories = [
     {
         title: "Enterprise Ecosystem",
         icon: <Database className="w-6 h-6 text-indigo-400" />,
-        skills: ["Java", "Spring Boot", "C#", ".NET Core", "SQL Server", "PostgreSQL", "Docker"]
+        skills: ["Java", "Spring Boot", "C#", ".NET Core", "SQL Server", "PostgreSQL", "MySQL", "Docker"]
     },
     {
         title: "Modern Web",
@@ -18,20 +19,27 @@ const skillCategories = [
         title: "Performance & Architecture",
         icon: <Zap className="w-6 h-6 text-amber-400" />,
         skills: ["Microservicios", "API REST", "GraphQL", "CI/CD", "Testing (Jest/JUnit)", "Redis"]
+    },
+    {
+        title: "Data & Automation",
+        icon: <BarChart className="w-6 h-6 text-emerald-400" />,
+        skills: ["Python", "Pandas / NumPy", "SQL (T-SQL)", "Power BI", "Bash / PowerShell", "Selenium", "Ansible", "ETL Pipelines"]
     }
 ];
 
 export const Skills = () => {
+    const { t } = useLanguage();
+
     return (
         <section id="skills" className="w-full py-24 px-6 md:px-12 max-w-7xl mx-auto">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold mb-4">Habilidades Técnicas</h2>
+                <h2 className="text-3xl md:text-5xl font-bold mb-4">{t('skills.title')}</h2>
                 <p className="text-neutral-400 max-w-2xl mx-auto">
-                    Dominio en el espectro completo del desarrollo web, abarcando desde integraciones corporativas complejas hasta interfaces modernas y ligeras.
+                    {t('skills.desc')}
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {skillCategories.map((cat, i) => (
                     <motion.div
                         key={cat.title}

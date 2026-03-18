@@ -1,7 +1,7 @@
 export type Project = {
     id: string;
-    title: string;
-    description: string;
+    title: { es: string; en: string };
+    description: { es: string; en: string };
     stack: string[];
     link?: string;
     repo?: string;
@@ -11,29 +11,56 @@ export type Project = {
 export const projects: Project[] = [
     {
         id: "project-1",
-        title: "Sistema Enterprise Booking",
-        description: "Plataforma de gestión de reservas empresariales. Arquitectura escalable y alta disponibilidad.",
-        stack: ["Java", "Spring Boot", "Angular", "PostgreSQL"],
+        title: {
+            es: "Microservicios de Finanzas",
+            en: "Finance Microservices"
+        },
+        description: {
+            es: "Plataforma de gestión de microfinanzas. Arquitectura escalable y alta disponibilidad.",
+            en: "Microfinance management platform with a scalable and highly available architecture."
+        },
+        stack: ["Java", "Spring Boot", "Angular", "MySQL"],
+        repo: "https://github.com/Microfinanzas-Fullstack",
         colSpan: 1,
     },
     {
         id: "project-2",
-        title: "AI Analysis Dashboard",
-        description: "Dashboard analítico potenciado por IA para análisis de datos predictivos en tiempo real.",
+        title: {
+            es: "Plataforma de E-learning",
+            en: "E-learning Platform"
+        },
+        description: {
+            es: "Plataforma de e-learning con funcionalidades de autenticación y gestión de cursos.",
+            en: "E-learning platform with authentication functionality and course management."
+        },
         stack: ["Python", "FastAPI", "React", "TypeScript"],
+        repo: "https://github.com/Plataforma-de-E-learning",
         colSpan: 1,
     },
     {
         id: "project-3",
-        title: "Portal de Gestión Interna",
-        description: "Solución integral para RRHH con flujos de aprobación y gestión de documentos.",
-        stack: ["C#", ".NET Core", "Vue.js", "SQL Server"],
+        title: {
+            es: "Sistema de Gestión de Gimnasio",
+            en: "Gym Management System"
+        },
+        description: {
+            es: "Solución integral para la gestión de gimnasios con funcionalidades de gestión de reservas y manejo de espacios.",
+            en: "Comprehensive solution for gym management with booking and space management features."
+        },
+        stack: ["C#", ".NET Core", "Vue.js", "SQLite"],
+        repo: "https://github.com/Sistema-Reserva-Gimnasio",
         colSpan: 1,
     },
     {
         id: "project-4",
-        title: "Lista de Compras Pro",
-        description: "Aplicación web para gestionar listas de compras inteligentes con funcionalidades de autenticación y exportación a PDF.",
+        title: {
+            es: "Lista de Compras Pro",
+            en: "Shopping List Pro"
+        },
+        description: {
+            es: "Aplicación web para gestionar listas de compras inteligentes con funcionalidades de autenticación y exportación a PDF.",
+            en: "Web application for managing smart shopping lists with authentication and PDF export."
+        },
         stack: ["TypeScript", "Next.js", "Tailwind CSS", "React"],
         repo: "https://listadecompraspro.xyz",
         link: "https://listadecompraspro.xyz",
@@ -41,8 +68,14 @@ export const projects: Project[] = [
     },
     {
         id: "project-5",
-        title: "Simpsons App",
-        description: "Aplicación web para buscar y ver información sobre los personajes de los Simpsons.",
+        title: {
+            es: "Simpsons App",
+            en: "Simpsons App"
+        },
+        description: {
+            es: "Aplicación web para buscar y ver información sobre los personajes de los Simpsons.",
+            en: "Web application to search and view information about characters from The Simpsons."
+        },
         stack: ["TypeScript", "Next.js", "Tailwind CSS", "React"],
         repo: "https://github.com/SebasSilvaT/Front-Simpson",
         link: "https://front-simpson.vercel.app",

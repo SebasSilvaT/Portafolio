@@ -6,18 +6,21 @@ import { ExternalLink, Github } from 'lucide-react';
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+import { useLanguage } from '@/context/LanguageContext';
+
 function cn(...inputs: (string | undefined | null | false)[]) {
     return twMerge(clsx(inputs));
 }
 
 export const BentoGrid = () => {
+    const { language, t } = useLanguage();
+
     return (
         <section id="proyectos" className="w-full py-24 px-6 md:px-12 max-w-7xl mx-auto">
             <div className="mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold mb-4">Trabajo Destacado</h2>
+                <h2 className="text-3xl md:text-5xl font-bold mb-4">{t('bento.title')}</h2>
                 <p className="text-neutral-400 max-w-2xl">
-                    Explorando la intersección entre el rendimiento empresarial y el diseño impactante.
-                    Aquí hay una selección de mis proyectos más recientes.
+                    {t('bento.desc')}
                 </p>
             </div>
 
@@ -48,8 +51,12 @@ export const BentoGrid = () => {
                                 </div>
                             </div>
 
-                            <h3 className="text-2xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">{project.title}</h3>
-                            <p className="text-neutral-400 text-sm leading-relaxed mb-6">{project.description}</p>
+                            <h3 className="text-2xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">
+                                {project.title[language]}
+                            </h3>
+                            <p className="text-neutral-400 text-sm leading-relaxed mb-6">
+                                {project.description[language]}
+                            </p>
                         </div>
 
                         <div className="relative z-10 flex flex-wrap gap-2 mt-auto">

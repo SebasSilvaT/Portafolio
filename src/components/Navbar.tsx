@@ -3,7 +3,11 @@
 import { motion } from 'framer-motion';
 import { Terminal } from 'lucide-react';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 export const Navbar = () => {
+    const { language, toggleLanguage, t } = useLanguage();
+
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         e.preventDefault();
         const href = e.currentTarget.href;
@@ -26,10 +30,18 @@ export const Navbar = () => {
                     <Terminal className="w-6 h-6 text-indigo-400" />
                     <span>Silva.dev</span>
                 </a>
-                <div className="hidden md:flex gap-8 text-sm font-medium text-neutral-400">
-                    <a href="#proyectos" onClick={handleScroll} className="hover:text-white transition-colors">Proyectos</a>
-                    <a href="#sobre-mi" onClick={handleScroll} className="hover:text-white transition-colors">Sobre Mí</a>
-                    <a href="#skills" onClick={handleScroll} className="hover:text-white transition-colors">Skills</a>
+                <div className="flex items-center gap-6">
+                    <div className="hidden md:flex gap-8 text-sm font-medium text-neutral-400">
+                        <a href="#proyectos" onClick={handleScroll} className="hover:text-white transition-colors">{t('nav.proyectos')}</a>
+                        <a href="#sobre-mi" onClick={handleScroll} className="hover:text-white transition-colors">{t('nav.sobreMi')}</a>
+                        <a href="#skills" onClick={handleScroll} className="hover:text-white transition-colors">{t('nav.skills')}</a>
+                    </div>
+                    <button 
+                        onClick={toggleLanguage} 
+                        className="px-3 py-1.5 rounded-xl bg-neutral-900 border border-neutral-800 text-xs font-bold text-neutral-300 hover:border-neutral-600 hover:text-white transition-all duration-300 shadow-lg"
+                    >
+                        {language === 'es' ? 'EN' : 'ES'}
+                    </button>
                 </div>
             </div>
         </motion.nav>
