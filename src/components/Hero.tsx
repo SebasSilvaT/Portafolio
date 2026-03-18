@@ -7,6 +7,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 export const Hero = () => {
     const { t } = useLanguage();
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
     return (
         <section id="hero" className="w-full min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
@@ -54,7 +55,7 @@ export const Hero = () => {
                         {t('hero.btn.projects')}
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>
-                    <a href="/cv.pdf" download="Sebastian Valentino Silva Tirado.pdf" className="px-8 py-4 rounded-xl border border-neutral-800 hover:bg-neutral-900 transition-all flex items-center gap-2">
+                    <a href={`${basePath}/cv.pdf`} download="Sebastian Valentino Silva Tirado.pdf" className="px-8 py-4 rounded-xl border border-neutral-800 hover:bg-neutral-900 transition-all flex items-center gap-2">
                         {t('hero.btn.cv')}
                         <Download className="w-4 h-4" />
                     </a>

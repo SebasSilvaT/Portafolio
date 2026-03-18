@@ -6,6 +6,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 export const AboutMe = () => {
     const { t } = useLanguage();
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
     return (
         <section id="sobre-mi" className="w-full py-24 px-6 md:px-12 bg-neutral-900/30">
@@ -27,7 +28,7 @@ export const AboutMe = () => {
                             playsInline
                             controls
                         >
-                            <source src="/Video Portafolio Subtitulos.mp4" type="video/mp4" />
+                            <source src={`${basePath}/Video Portafolio Subtitulos.mp4`} type="video/mp4" />
                             Tu navegador no soporta el elemento de video.
                         </video>
                         <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-[2rem] pointer-events-none"></div>
